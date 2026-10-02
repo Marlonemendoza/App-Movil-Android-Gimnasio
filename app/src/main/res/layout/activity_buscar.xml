@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BuscarActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgFondo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/gimnasio9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtMostrarUsuarioActivityBuscar"
+        android:layout_width="280dp"
+        android:layout_height="250dp"
+        android:background="#BB000000"
+        android:padding="10dp"
+        android:scrollbars="vertical"
+        android:textColor="@color/white"
+        android:textIsSelectable="true"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.500" />
+
+    <TextView
+        android:id="@+id/txtUsuarioActivityBuscar"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="170dp"
+        android:layout_marginEnd="170dp"
+        android:text="ID o Cédula:"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:padding="3dp"
+        android:background="#BB000000"
+        android:visibility="gone"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.10"
+        />
+    <EditText
+        android:id="@+id/etxtIdActivityBuscar"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:hint="Ingrese ID o Cédula!"
+        android:textColorHint="#FFFFFF"
+        android:inputType="number"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:padding="1dp"
+        android:background="#BB000000"
+        android:visibility="gone"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.160"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.50"/>
+
+    <TextView
+        android:id="@+id/txtErrorId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sin Letras Ni Espacios"
+        android:textColor="#FF0000"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:background="#99FFFFFF"
+        android:visibility="gone"
+        android:layout_marginStart="142dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.21"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnBuscarActivityBuscar"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:text="BUSCAR"
+        android:textStyle="bold"
+        android:textSize="15.8sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/boton_buscar_buscar"
+        android:visibility="gone"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25"
+        app:backgroundTint="@null" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnEliminarActivityBuscar"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:text="ELIMINAR"
+        android:textStyle="bold"
+        android:textSize="13.8sp"
+        android:textColor="@android:color/white"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75"
+        app:layout_constraintHorizontal_bias=".26"
+        app:backgroundTint="@null"
+
+        android:background="@drawable/boton_buscar_buscar" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnEditarActivityBuscar"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:text="EDITAR"
+        android:textStyle="bold"
+        android:textSize="13.8sp"
+        android:textColor="@android:color/white"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75"
+        app:layout_constraintHorizontal_bias=".76"
+        app:backgroundTint="@null"
+
+        android:background="@drawable/boton_buscar_buscar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

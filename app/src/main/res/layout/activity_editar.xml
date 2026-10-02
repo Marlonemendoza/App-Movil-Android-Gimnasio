@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditarActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgFondo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/gimnasio6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etxtnombreActivityEditar"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:hint="Ingrese nombre completo..."
+        android:inputType="textNoSuggestions"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:background="#CF999999"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1"/>
+
+    <EditText
+        android:id="@+id/etxtidActivityEditar"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:hint="Ingrese ID o Cédula!"
+        android:inputType="number"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:padding="1dp"
+        android:background="#CF999999"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.302"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.57"/>
+    <TextView
+        android:id="@+id/txtErrorIdActivityEditar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sin Letras Ni Espacios"
+        android:textColor="#FF0000"
+        android:textSize="15sp"
+        android:visibility="gone"
+        android:textStyle="normal"
+        android:background="#99FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+
+        android:layout_marginStart="150dp"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.35"/>
+
+    <EditText
+        android:id="@+id/etxtedadActivityEditar"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:hint="Ingrese edad!"
+        android:inputType="number"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:padding="1dp"
+        android:background="#CF999999"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.35"/>
+
+    <TextView
+        android:id="@+id/txtErrorEdadActivityEditar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edad no Válida"
+        android:textColor="#FF0000"
+        android:textSize="15sp"
+        android:background="#99FFFFFF"
+        android:textStyle="normal"
+        android:visibility="gone"
+
+        app:layout_constraintStart_toStartOf="parent"
+
+        android:layout_marginStart="100dp"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.447"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/menuMembresiaActivityEditar"
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="Seleccione"
+
+        app:hintTextColor="@color/white"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.65">
+
+        <AutoCompleteTextView
+            android:id="@+id/etxtmembresiaActivityEditar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:textColor="@color/white"
+
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+
+            android:textSize="18sp"
+
+            android:background="#CF999999" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/txtnombreActivityEditar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginEnd="130dp"
+        android:text="Nombre"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:alpha="0.95"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04"
+        />
+
+    <TextView
+        android:id="@+id/txtidActivityEditar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="ID/Cedula:"
+        android:textColor="@android:color/white"
+
+        android:textSize="25sp"
+
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintVertical_bias="0.3"/>
+
+    <TextView
+        android:id="@+id/txtedadActivityEditar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Edad:"
+        android:textColor="@android:color/white"
+
+        android:textSize="25sp"
+
+        android:textStyle="bold"
+        android:alpha="0.95"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintVertical_bias="0.4"/>
+
+    <TextView
+        android:id="@+id/txtidmembresiaActivityEditar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Membresia:"
+        android:textColor="@android:color/white"
+
+        android:textSize="25sp"
+
+        android:textStyle="bold"
+        android:alpha="0.95"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnGuardarActivityEditar"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="EDITAR"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65"
+
+        app:backgroundTint="@null"
+
+        android:background="@drawable/botones_activity_inscribir" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

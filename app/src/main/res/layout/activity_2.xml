@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity2">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgFondo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/gimnasio3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btninscribir"
+        android:layout_width="182dp"
+        android:layout_height="60dp"
+        android:text="Inscribir usuario"
+        android:textStyle="bold"
+        android:textSize="18.095sp"
+        android:textColor="@android:color/white"
+        app:backgroundTint="@null"
+        android:background="@drawable/boton_inscribir3d"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintVertical_bias="0.2"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btninscritos"
+        android:layout_width="182dp"
+        android:layout_height="60dp"
+        android:text="Usuarios inscritos"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        app:backgroundTint="@null"
+        android:background="@drawable/boton_inscribir3d"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintVertical_bias="0.34"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnbuscar"
+        android:layout_width="182dp"
+        android:layout_height="60dp"
+        android:text="Buscar usuario"
+        android:textStyle="bold"
+        android:textSize="18.095sp"
+        android:textColor="@android:color/white"
+        app:backgroundTint="@null"
+        android:background="@drawable/boton_inscribir3d"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintVertical_bias="0.48"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnoro"
+        android:layout_width="182dp"
+        android:layout_height="60dp"
+        android:text="Correos oro"
+        android:textStyle="bold"
+        android:textSize="18.095sp"
+        android:textColor="@android:color/white"
+        app:backgroundTint="@null"
+        android:background="@drawable/boton_inscribir3d"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintVertical_bias="0.62"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
